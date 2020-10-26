@@ -1,0 +1,1008 @@
+@import url(normalize.css);
+
+@font-face {
+    src: url(MyriadPro-Regular.ttf);
+    font-family: 'MyriadPro';
+}
+
+@font-face {
+    src: url(Lato-Regular.ttf);
+    font-family: "Lato";
+}
+
+/* ОБЩИЕ СТИЛИ ДЛЯ ВСХ СТРАНИЦ ESHOP */
+p {
+    margin: 0;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 885px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-beetween {
+    justify-content: space-between;
+}
+
+.flex-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.is-bold {
+    font-weight: bold;
+}
+
+.article {
+    width: 295px;
+    height: 295px;
+    color: white;
+    background: center center / cover;
+    background-color:  rgb(186, 186, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 38px;
+}
+
+/* Стили для главной страницы */
+.wrapper {
+    background-color: rgb(255, 255, 255);
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 36px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.eshop-logo {
+    width: 42px;
+    height: 42px;
+    background: url(../icons_eshop/logo.jpg) center center / cover;
+    margin-right: 55px;
+    cursor: pointer;
+}
+
+.catalog-text {
+    font-size: 14px;
+    font-family: 'MyriadPro';
+    text-decoration: none;
+    margin: 0;
+    color: rgb(48, 48, 48);
+}
+
+.shopper {
+    display: flex;
+    margin-left: auto;    
+}
+
+.shopper-block {
+    display: flex;
+    align-items: center;
+}
+
+.shopper-item {    
+    width: 20px;
+    height: 20px;  
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: bottom;  
+}
+
+.account-logo {
+    background: url(../icons_eshop/account.png) center -3px / 29px;    
+}
+
+.basket-logo {
+    background: url(../icons_eshop/basket.png) center -3px / 30px;  
+}
+
+.account {
+    margin-right: 50px;
+}
+
+.margin_zero {
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 72px;
+    font-weight: 300;
+    font-family: 'MyriadPro';
+    text-transform: uppercase;
+    line-height: 51px;
+    margin: 150px 0 0;
+    letter-spacing: 4px;
+}
+
+.main-text {
+    font-size: 24px;
+    font-family: 'Georgia';
+    color: rgb(96, 96, 96);
+    font-style: italic;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 35px 0 94px;
+}
+
+.main-button {
+    display: inline-block;
+    border: 1px solid  rgb(148, 148, 148);
+    box-sizing: border-box;
+    padding: 24px 39px ;
+    text-transform: uppercase;
+    line-height: 10px;
+    margin: 0 0 52px;
+}
+  
+.column-height {
+    height: 590px;
+}
+
+.article-color {
+    background-color: rgb(96, 96, 96);
+}
+
+.article-title {
+    font-size: 24px;
+    font-family: "MyriadPro";
+    color: white;
+    text-transform: uppercase;
+    margin: 0;   
+}
+  
+.article-description-1 {
+    font-size: 18px;
+    font-family: "Georgia";
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 5px;  
+}
+
+.article-description-2 {
+    font-size: 16px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    line-height: 1.4;
+    margin-top: 20px;    
+}
+
+.article-description-3 {
+    font-size: 18px;
+    font-family: "Georgia";
+    color: white;
+    font-style: italic;
+    margin-top: 5px;  
+}
+
+.stick {
+    background-color: rgb(255, 255, 255);
+    width: 22px;
+    height: 1px;
+}
+
+.attention-sign {
+    width: 33px;
+    height: 33px;
+    background: url(../icons_eshop/attention-sign-outline.png) center center / cover;
+    margin: 0 11px;
+}
+
+.arrow {
+    background: url(../icons_eshop/arrow.png) center center / cover;
+    width: 27px;
+    height: 13px;
+    margin: 0 auto 15px;    
+}
+
+.form-title {
+    font-size: 36px;
+    font-family: "MyriadPro";
+    text-transform: uppercase;
+    line-height: 0.972;
+    letter-spacing: 1.7px;
+    margin: 240px 0 0;    
+}
+
+.form-text {
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(96, 96, 96);
+    font-style: italic;
+    line-height: 1.944;
+    letter-spacing: 1.6px;
+    margin: 14px 0 54px;    
+}
+
+.form-item [type=email] {
+    width: 475px;
+    height: 54px;
+    border: 1px  solid rgb(148, 148, 148);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "MyriadPro";
+    font-style: italic;
+    color: rgb(96, 96, 96);
+    padding: 20px 14px;
+}
+
+.form-item [type=submit] {
+    border: 1px solid  rgb(205, 115, 51);
+    background-color: rgb(220, 129, 62);
+    width: 134px;
+    height: 54px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.6px;
+}
+
+.form-text-red {
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(237, 28, 36);
+    font-style: italic;
+    margin: 22px 0 276px;
+}
+
+.footer {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-item a {
+   display: block;
+}
+  
+.footer-item-title {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "MyriadPro";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+.margin-footer {
+    margin: 0 0 8px 0;
+}
+
+.separation {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 1px;
+    height: 159px;    
+} 
+  
+.social-icon {
+    width: 30px;
+    height: 30px;    
+    margin: 15px 15px 0 0;
+}
+
+.twitter {
+    background: url(../icons_eshop/twitter.png) center center / cover;    
+}
+
+.facebook {
+    background: url(../icons_eshop/facebook.png) center center / cover;    
+}
+
+.instagram {
+    background: url(../icons_eshop/instagram.png) center center / cover;    
+}
+
+/* СТИЛИ ДЛЯ HEADERа */
+.margin_nav {
+    margin-right: 33px;
+}
+
+
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ "Каталог" catalog.php*/
+/* Начало стилей "хлебных крошек" */
+.breadcrumbs {
+    margin-top: 33px;
+}
+
+.breadcrumbs-item {
+    font-size: 12px;
+    font-family: "MyriadPro";
+    text-transform: uppercase;
+    color: rgb(96, 96, 96);
+    text-decoration: none;
+}
+
+.slash {
+    margin: 0 10px;
+}
+/* Конец стилей "хлебных крошек" */
+
+.catalog-title {
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "MyriadPro";
+    color: rgb(48, 48, 48);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 27px;
+    margin: 76px 0 0;
+    letter-spacing: 1px;
+}
+
+.margin_title {
+    margin-bottom: 108px;
+}
+
+.catalog-subtitle {
+    font-size: 18px;
+    font-family: 'Georgia';
+    color: rgb(96, 96, 96);
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 20px 0 68px;
+    text-align: center;
+}
+
+/* Стили фильтрации товаров (выпадаюшие списки) */
+.filters a {
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.filters li {
+    position: relative;
+    list-style: none;
+}
+
+.filters-list {
+    margin: 0;
+    padding: 0;
+}
+
+.filters-list>li {
+    min-width: 178px;
+    margin: 0 12.5px;
+}
+
+.filters-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1px 4px 3px;
+    cursor: pointer;
+}
+
+.filters-link{
+    font-size: 14px;
+    font-family: "Georgia";
+    color: rgb(96, 96, 96);
+    font-style: italic;
+}
+
+/* Создаём стрелку для фильтра (выпадющего списка) */
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 11px solid  rgb(48, 48, 48);
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.triangle.active {
+    transform: rotate(-180deg);
+}
+/* Конец стилей создания стрелки */
+
+.filters-stick {
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+.sub-filters-list {
+    /* display: none; */
+    min-width: 178px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 21px;
+    background-color: white;
+    padding: 18px 0px 0px 0px;
+    transition: max-height 0.3s ease-out;
+    opacity: 0.95;
+}
+
+.sub-filters-list li{
+    height: 14px;
+    margin-bottom: 21px;
+}
+
+.sub-filters-link {
+    padding: 0px 10px;
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(96, 96, 96);
+    font-style: italic;  
+}
+
+/* Появление выпадающего списка при наведении "мышки" на категорию фильтра
+.filters-list>li:hover .sub-filters-list {
+    display: block;
+} */
+
+/* Появление выпадающего списка при клике "мышкой" на категорию фильтра*/
+/* .sub-filters-list.open {
+    display: block;
+} */
+
+#catalog {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.catalog-item {
+    margin: 65px auto 40px;
+}
+
+.item-margin {
+    margin: 65px 25px 40px;
+}
+
+.item-photo {
+    width: 222px;
+    height: 256px;
+    background: center / contain no-repeat;
+    border: 1px solid rgb(211, 211, 211);
+    margin: 0 12px 33px;
+}
+
+.item-photo-cover {
+    width: 222px;
+    height: 256px;
+    background: center / cover;
+    border: 1px solid rgb(211, 211, 211);
+    margin: 0 12px 33px;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+    vertical-align: top;
+}
+
+.title-goods {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Стили оформления пагинации */
+.pagination {
+    margin-bottom: 200px;
+}
+
+.pagination > a {
+    margin-right: 5px;
+    background-color: rgb(48, 48, 48);
+    font-size: 14px;
+    font-family: "Lato";
+    color: white;
+    text-decoration: none;    
+}
+
+.page-active {
+    background-color: white;
+    color: rgb(96, 96, 96);
+    text-decoration: none;
+}
+
+.box { 
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(96, 96, 96);
+}
+/* Конец стилей оформления пагинации */
+
+/* Стили для карточки товара */
+.good-photo {
+    max-width: 1180px;
+    height: 590px;
+    background: center / contain no-repeat;    
+    margin: 24px 0 61px;
+}
+
+.good-title {
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "MyriadPro";
+    color: rgb(48, 48, 48);
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.good-article {
+font-size: 14px;
+font-family: "MyriadPro";
+color: rgb(155, 155, 155);
+letter-spacing: 1px;
+margin: 10px 0 17px;
+}
+
+.good-price {
+    font-size: 18px;
+    font-family: "Georgia";    
+    font-style: italic;
+    color: rgb(96, 96, 96);
+}
+
+.good-description {
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(96, 96, 96);
+    width: 580px;
+    line-height: 1.714;
+    margin: 35px auto;
+}
+
+.good-size {
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(96, 96, 96);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.box-size {
+    box-sizing: border-box;
+    border: 1px solid rgb(149, 149, 149);
+    width: 30px;
+    height: 30px;
+    margin: 0 7px;
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(70, 69, 66);
+}
+
+.card-button { 
+    border: 1px  solid rgb(230, 116, 41);
+    background-color: rgb(246, 130, 54);
+    width: 192px;
+    height: 49px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 50px auto 96px;    
+}
+
+.card-button:hover {
+    background-color: rgb(255, 106, 0);
+}
+/* Конец стилей оформления карточки товара */
+
+/* Стили оформления формы регистрации и авторизации пользователя */
+.form-reg {
+    margin: 50px 0 250px;
+}
+
+.form-reg-item {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-reg [type=text],[type=email],[type=password] {
+    width: 400px;
+    height: 40px;
+    border: 1px  solid rgb(148, 148, 148);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "MyriadPro";
+    font-style: italic;
+    color: rgb(96, 96, 96);
+    padding: 10px 14px;
+}
+
+.form-reg-item button {
+    border: 1px solid  rgb(205, 115, 51);
+    background-color: rgb(220, 129, 62);
+    width: 400px;
+    height: 40px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.form-reg-item button:hover {
+    background-color: rgb(255, 106, 0);
+}
+
+.form-reg a {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "MyriadPro";
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+}
+
+/* Стили оформления странички "Корзина товаров" */
+.basket-title {
+    margin: 121px 0 96px;
+}
+
+.basket-title-weight {
+    font-weight: 600;
+    margin: 0;
+}
+
+.basket-table-title {
+    min-width: 699px;
+    font-size: 12px;
+    font-family: "MyriadPro";
+    color: rgb(144, 144, 144);
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+ 
+.column-photo {
+    min-width: 126px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.column-name {
+    width: 651px;
+    min-width: 170px;
+    min-width: 170px;
+    box-sizing: border-box;
+}
+
+.column-size {
+    min-width: 96px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column-quantity {
+    min-width: 110px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column-cost {
+    min-width: 124px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column-remove {
+    min-width: 53px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.field-photo {
+    width: 98px;
+    height: 98px;
+    background: center / contain no-repeat;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.basket-table-row {
+    min-width: 699px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+    padding: 18px 0 17px;
+}
+
+.basket-good-title {
+    font-size: 14px;
+    font-family: "MyriadPro";
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+}
+
+.basket-good-article {
+    font-size: 12px;
+    font-family: "MyriadPro";
+    color: rgb(96, 96, 96);
+    margin-top: 5px;
+}
+
+.field-remove {
+    font-size: 30px;
+    font-family: "Lato";
+    color: rgb(48, 48, 48);
+    text-transform: uppercase;
+    line-height: 0.6;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+}
+  
+.basket-good-text {
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(48, 48, 48);
+    text-transform: uppercase;
+}
+
+.close{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+}
+
+.close:before,
+.close:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    width: 13px;
+    height: 1px;
+    background-color: rgb(48, 48, 48);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.box-price-total {
+    min-width: 699px;
+    background-color: rgb(253, 239, 239);
+    /* width: 1180px; */
+    height: 58px;
+    margin-top: 4px;
+}
+
+.price-total {
+    font-size: 14px;
+    font-family: "MyriadPro";
+    color: rgb(246, 130, 54);
+    font-weight: 600;
+    padding: 0 93px 0 30px;
+    letter-spacing: 1.1px;
+}
+
+.basket-button {
+    margin: 10px auto;
+}
+
+.basket-button-text {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.shape-box{
+    width: 94px;
+    height: 18px;
+    margin: 75px auto;
+}
+
+.form-delivery {
+    border: 1px solid rgb(229, 229, 229);
+    background-color: rgba(235, 235, 235, 0.071);
+    /* width: 1178px; */
+    min-width: 699px;
+    height: 1002px;
+}
+
+.form-delivery input {
+    font-size: 14px;
+    font-family: "MyriadPro";
+    font-style: italic;
+    color: rgb(96, 96, 96);
+}
+
+.form-title-margin {
+ margin: 100px 0 0;
+}
+
+.form-subtitle-margin {
+    margin: 14px 0 95px;
+}
+
+.from-delivery-item {
+    margin-bottom: 50px;
+}
+
+.position {
+    position: relative;
+}
+
+.from-delivery-item-title {
+    font-size: 12px;
+    font-family: "MyriadPro";
+    color: rgb(96, 96, 96);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.from-delivery-box-text {
+    font-size: 12px;
+    font-family: "MyriadPro";
+    color: rgb(96, 96, 96);
+    padding: 14px 0;
+}
+
+.form-delivery-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    cursor: pointer;
+    border: 1px solid rgb(194, 194, 194);
+    width: 580px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.triangle-delivery {
+    width: 0;
+    height: 0;
+    border-top: 7px solid rgb(96, 96, 96);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.triangle-delivery.active {
+    transform: rotate(-180deg);
+}
+
+.list-delivery {
+    min-width: 580px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: white;
+    transition: max-height 0.3s ease-out;
+    margin: 0;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+.list-delivery li {
+    list-style: none;
+}
+
+.form-delivery-half-box {
+    border: 1px solid rgb(194, 194, 194);
+    width: 279px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.margin-half-box {
+    margin-right: 21px;
+}
+
+.form-pay {
+    border: 1px solid rgb(229, 229, 229);
+    background-color: rgba(235, 235, 235, 0.071);
+    /* width: 1178px; */
+    min-width: 699px;
+    height: 702px;
+    margin-bottom: 48px;
+}
+
+.total-pay-left {
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(96, 96, 96);
+    line-height: 2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.total-pay-right {
+    font-size: 18px;
+    font-family: "Georgia";
+    color: rgb(96, 96, 96);
+    font-style: italic;
+    line-height: 2;
+    text-align: left;
+}
+
+.total-pay-margin {
+    margin-bottom: 95px;
+}
+
+.total-pay-color {
+    color: rgb(246, 130, 54);
+
+}
+
+.from-pay-item {
+    margin-bottom: 38px;
+}
+
+.pay-card {
+    background: url(../icons_eshop/visa.png) center center / cover;
+    width: 69px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+.order-button {
+    margin: 0 auto;
+}
+
+/* стили оформления страницы "О нас" */
+.map-title {
+    margin: 50px 0 50px;
+}
+
+#map {
+    width: 800px;
+    height: 550px;
+    margin: 0 auto 50px;
+}
+  
