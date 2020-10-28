@@ -25,6 +25,11 @@ require_once('../../components/header/index.php');
                 <div class="form-reg-item">
                     <input type="password" name="password" placeholder="Пароль" required>
                 </div>
+                <? if (isset($_GET['wrong'])) { ?>
+                    <div class="form-reg-item catalog-text" style="color: rgb(237, 28, 36);">
+                        Такой логин или E-mail уже существует
+                    </div>
+                <? } ?>
                 <div class="form-reg-item">
                     <button>Зарегистрироваться</button>
                 </div>
