@@ -27,7 +27,7 @@ require_once('../../components/header/index.php');
                 </div>
                 <? if (isset($_GET['wrong'])) { ?>
                     <div class="form-reg-item catalog-text" style="color: rgb(237, 28, 36);">
-                        Такой логин или E-mail уже существует
+                        Такой логин или e-mail уже существует
                     </div>
                 <? } ?>
                 <div class="form-reg-item">
