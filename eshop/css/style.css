@@ -1001,7 +1001,7 @@ margin: 10px 0 17px;
 }
 
 #map {
-    width: 800px;
+    max-width: 1180px;
     height: 550px;
     margin: 0 auto 50px;
 }
